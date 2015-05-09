@@ -18,8 +18,6 @@ namespace :scraper do
   		subheading = new_doc.p(class: 'description').text
   		permalink = link.href
 
-  		
-
   		Article.create(title: title, subheading: subheading, permalink: permalink)
   	end
   end
